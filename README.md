@@ -8,4 +8,3 @@ Steps
 - python main.py
 - open index.html
 
-hello
