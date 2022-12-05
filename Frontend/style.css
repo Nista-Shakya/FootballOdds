@@ -16,8 +16,8 @@ body {
   border-radius: 3px;
   padding: 10px;
   box-shadow: 0 5px 25px rgba(0,0,0,.5);
-  margin-top: 256px;
-  margin-left: 200px;
+  margin-top: 19%;
+  margin-left: 16%;
   font-size: 17px;
   display: flex;
   float: left;
@@ -34,8 +34,8 @@ body {
   border-radius: 3px;
   padding: 10px;
   box-shadow: 0 5px 25px rgba(0,0,0,.5);
-  margin-top: 256px;
-  margin-right: 200px;
+  margin-top: 19%;
+  margin-right: 16%;
   font-size: 17px;
   display: flex;
   float: right;
@@ -59,23 +59,21 @@ body {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 369px;
-  margin-left: 127px;
+  margin-top: 5%;
+  margin-left: 44%;
 }
 
 h1{
-  font-size: 25px;
+  font-size: 25px; 
+  margin-left: 48%;
+  margin-top: 19%;
   position: absolute;
-  margin-left: 672px;
-  margin-top: 262px;
-
 }
 
 #oddsTable{
   font-family: sans-serif;
   border-collapse: collapse;
   width: 80%;
-  padding-left: 10px;
   margin-left: 10%;
   display: none;
 }
@@ -91,7 +89,7 @@ h1{
   text-align: left;
   background-color: #385623;
   color: white;
-  width: 25%;
+  width: 12%;
 }
 
 #oddsTable td{
@@ -101,3 +99,5 @@ h1{
   background-color: #538135;
   color: white;
 }
+
+
