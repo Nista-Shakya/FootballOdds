@@ -45,13 +45,32 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 const generateOdds = async () => {
     document.getElementById('odds').disabled = true;
-    document.getElementsByName("team").forEach((e, i) => {
+    document.getElementsByName("team").forEach((e) => {
       e.value = "" ;
     });
     const response = await submitForm();
-    alert(response['winner'])
-
+    displayResult(response); 
 };
+const displayResult = (response) => {
+   if(document.getElementById('oddsTable').style.display === ""){
+    document.getElementById('oddsTable').style.display = "block";
+    document.getElementById('tableBody').appendChild(createTableRow(response));
+   }
+   else{
+    document.getElementById('tableBody').prepend(createTableRow(response));
+   }
+};
+
+const createTableRow = (response) => {
+  const tr = document.createElement('tr');
+  Object.keys(response).forEach( (key) =>{
+    const td = document.createElement('td');
+    td.innerHTML = response[key];
+    tr.appendChild(td);
+  });
+    
+  return tr;
+}
 
 const validateForm = () => {
   document.getElementsByName("team").forEach((e, i) => {

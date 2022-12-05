@@ -70,3 +70,34 @@ h1{
   margin-top: 262px;
 
 }
+
+#oddsTable{
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  padding-left: 10px;
+  margin-left: 10%;
+  display: none;
+}
+
+#oddsTable td, #oddsTable th{
+  border: 3px solid #ddd;
+  padding: 10px;
+}
+
+#oddsTable th{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: #385623;
+  color: white;
+  width: 25%;
+}
+
+#oddsTable td{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: #538135;
+  color: white;
+}

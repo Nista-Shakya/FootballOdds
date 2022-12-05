@@ -33,9 +33,11 @@ async def find_personality(req: SearchItem):
     print(req)
     team1 = req.value0
     team2 = req.value1
-    choice = random.randint(0, 1)
-    winner = team1 if choice else team2
-    return {"winner": winner}
+    teams = f"{team1}-{team2}"
+    result = {"teams": teams, "home": 1.1, "draw": 1.2, "away": 1.3}
+    # choice = random.randint(0, 1)
+    # winner = team1 if choice else team2
+    return result
 
 if __name__ == "__main__":
     uvicorn.run("main:app")
